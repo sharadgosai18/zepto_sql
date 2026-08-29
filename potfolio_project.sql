@@ -93,7 +93,7 @@ order by total_revenue
 --Q4 find all products where mrp is greater than 500 and discount is less then 10%.
 select distinct name,mrp,discountpercent
 from zepto
-where mrp>500 and discountpercent<100
+where mrp>500 and discountpercent<10
 order by mrp desc,discountpercent desc
 
 --Q5 identify the top 5 categories offering the highest average discount percentage.
@@ -123,5 +123,5 @@ select category,sum(weightingms*availablequantity)total_weight
 from zepto
 group by category
 order by total_weight
-select* from zepto
+
 
